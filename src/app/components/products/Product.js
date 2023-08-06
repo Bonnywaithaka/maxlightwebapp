@@ -5,6 +5,7 @@ import React from "react";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 function Product({ image, name, price, description }) {
   return (
@@ -29,6 +30,15 @@ function Product({ image, name, price, description }) {
         <Typography>Price Ksh. 2500</Typography>
         <IconButton>
           <TwitterIcon />
+        </IconButton>
+        <IconButton>
+          <InstagramIcon />
+        </IconButton>
+        <IconButton>
+          <FacebookOutlinedIcon />
+        </IconButton>
+        <IconButton>
+          <WhatsAppIcon />
         </IconButton>
       </Box>
     </Box>
