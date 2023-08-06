@@ -2,10 +2,10 @@
 import { Box, Typography, IconButton } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+// import InstagramIcon from "@mui/icons-material/Instagram";
+// import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+// import TwitterIcon from "@mui/icons-material/Twitter";
+// import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 function Product({ image, name, price, description }) {
   return (
@@ -28,7 +28,7 @@ function Product({ image, name, price, description }) {
         <Typography>Product Name: {name}</Typography>
         <Typography>description: {price}</Typography>
         <Typography>Price Ksh. 2500</Typography>
-        <IconButton>
+        {/* <IconButton>
           <TwitterIcon />
         </IconButton>
         <IconButton>
@@ -39,7 +39,7 @@ function Product({ image, name, price, description }) {
         </IconButton>
         <IconButton>
           <WhatsAppIcon />
-        </IconButton>
+        </IconButton> */}
       </Box>
     </Box>
   );

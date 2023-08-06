@@ -8,14 +8,14 @@ function Products() {
     {
       id: 1,
       name: "506-800 Chandellier",
-      image: "/public/me.png",
+      image: "/assets/chandelier.jpg",
       price: "5,000",
       description: "Home style decor.",
     },
     {
       id: 2,
       name: "506-800 Chandellier",
-      image: "/public/me.png",
+      image: "/assets/me.png",
       price: "5,000",
       description: "Home style decor.",
     },
