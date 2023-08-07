@@ -28,7 +28,7 @@ function Product({ image, name, price, description }) {
       >
         <Image src={image} alt="no image" width={315} height={300} />
       </Box>
-      <Box sx={{ margin: "20px 0px 0px 0px" }}>
+      <Box sx={{ margin: "10px 0px 0px 0px" }}>
         <Typography variant="h4" fontSize={18} color="#3a3b3c">
           <b>{name}</b>
         </Typography>

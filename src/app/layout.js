@@ -16,20 +16,27 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Box sx={{ margin: "0px -10px 20px -8px" }}>
-          <Navbar />
-        </Box>
         <Box
           sx={{
-            minHeight: "100vh",
+            backgroundColor: "#e6e6e6",
+            margin: "0px -8px",
           }}
         >
-          {children}
+          <Box sx={{ margin: "0px -10px 20px -8px" }}>
+            <Navbar />
+          </Box>
+          <Box
+            sx={{
+              minHeight: "100vh",
+            }}
+          >
+            {children}
+          </Box>
+          <Box sx={{ margin: "0px -10px 20px -8px" }}>
+            <Footer />
+          </Box>
+          <WhatsAppFloating />
         </Box>
-        <Box sx={{ margin: "0px -10px 20px -8px" }}>
-          <Footer />
-        </Box>
-        <WhatsAppFloating />
       </body>
     </html>
   );

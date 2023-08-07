@@ -52,7 +52,7 @@ function Products() {
   return (
     <Box>
       <Box sx={{ display: "flex", justifyContent: "center", margin: "15px 0px" }}>
-        <Typography variant="h4" fontSize={26} color="#3a3a3a">
+        <Typography variant="h4" fontSize={26} color="#3a3b3c">
           <b>Products</b>
         </Typography>
       </Box>
