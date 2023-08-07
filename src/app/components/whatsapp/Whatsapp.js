@@ -30,7 +30,7 @@ const WhatsAppFloating = () => {
       onClick={handleWhatsAppClick}
     >
       <Box>
-        <Avatar>
+        <Avatar style={{ backgroundColor: "#25D366" }}>
           <WhatsAppIcon />
         </Avatar>
       </Box>
