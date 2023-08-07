@@ -23,34 +23,39 @@ function Products() {
     {
       id: 2,
       name: "506-800 Chandellier",
-      image: "/assets/chandelier.jpg",
+      image: "/assets/doublesink.jpg",
       price: "5,000",
       description: "Home style decor.",
     },
     {
       id: 3,
       name: "506-800 Chandellier",
-      image: "/assets/bthairu.png",
+      image: "/assets/coffetable.jpg",
       price: "5,000",
       description: "Home style decor.",
     },
     {
       id: 4,
       name: "506-800 Chandellier",
-      image: "/assets/cat.jpg",
+      image: "/assets/showerhead.jpg",
       price: "5,000",
       description: "Home style decor.",
     },
     {
       id: 5,
       name: "506-800 Chandellier",
-      image: "/assets/bthairu.png",
+      image: "/assets/mirrors.jpg",
       price: "5,000",
       description: "Home style decor.",
     },
   ];
   return (
     <Box>
+      <Box sx={{ display: "flex", justifyContent: "center", margin: "15px 0px" }}>
+        <Typography variant="h4" fontSize={26} color="#3a3a3a">
+          <b>Products</b>
+        </Typography>
+      </Box>
       <StyledGrid container spacing={2}>
         {items.map((item) => (
           <Grid item key={item.id} sx={1} md={4} lg={3}>

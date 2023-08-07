@@ -16,9 +16,8 @@ function Product({ image, name, price, description }) {
   return (
     <Box
       sx={{
-        border: "2px solid #ee7600",
         borderRadius: 4,
-        padding: 2,
+        padding: 0,
       }}
     >
       <Box
@@ -27,13 +26,13 @@ function Product({ image, name, price, description }) {
           justifyContent: "center",
         }}
       >
-        <Image src={image} alt="no image" width={200} height={200} />
+        <Image src={image} alt="no image" width={315} height={300} />
       </Box>
-      <Box>
-        <Typography variant="h4" fontSize={18}>
+      <Box sx={{ margin: "20px 0px 0px 0px" }}>
+        <Typography variant="h4" fontSize={18} color="#3a3b3c">
           <b>{name}</b>
         </Typography>
-        <Typography variant="h6">{`@ Ksh: ${price}`}</Typography>
+        {/* <Typography variant="h6">{`@ Ksh: ${price}`}</Typography>
         <IconButton onClick={() => handleWhatsAppButtonClick()}>
           <WhatsAppIcon />
         </IconButton>
@@ -42,7 +41,7 @@ function Product({ image, name, price, description }) {
         </IconButton>
         <IconButton>
           <FacebookOutlinedIcon />
-        </IconButton>
+        </IconButton> */}
       </Box>
     </Box>
   );
