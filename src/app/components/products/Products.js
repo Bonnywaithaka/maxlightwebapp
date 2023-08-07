@@ -1,7 +1,15 @@
-import { Box, Grid, Typography } from "@mui/material";
+"use client";
+import { Box, Grid, Typography, styled } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import Product from "./Product";
+
+const StyledGrid = styled(Grid)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    display: "flex",
+    justifyContent: "center",
+  },
+}));
 
 function Products() {
   let items = [
@@ -15,7 +23,7 @@ function Products() {
     {
       id: 2,
       name: "506-800 Chandellier",
-      image: "/assets/me.png",
+      image: "/assets/chandelier.jpg",
       price: "5,000",
       description: "Home style decor.",
     },
@@ -43,9 +51,9 @@ function Products() {
   ];
   return (
     <Box>
-      <Grid container spacing={2}>
+      <StyledGrid container spacing={2}>
         {items.map((item) => (
-          <Grid item key={item.id}>
+          <Grid item key={item.id} sx={1} md={4} lg={3}>
             <Product
               name={item.name}
               price={item.price}
@@ -54,7 +62,7 @@ function Products() {
             />
           </Grid>
         ))}
-      </Grid>
+      </StyledGrid>
     </Box>
   );
 }
