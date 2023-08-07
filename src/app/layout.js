@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
         <Box
           sx={{
             backgroundColor: "#e6e6e6",
-            margin: "0px -8px",
+            margin: "0px -8px 0px -8px",
           }}
         >
           <Box sx={{ margin: "0px -10px 20px -8px" }}>

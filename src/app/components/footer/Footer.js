@@ -26,10 +26,18 @@ function Footer() {
           <Divider />
           <Box>
             <Box sx={{ display: "flex", flexDirection: "column" }}>
-              <Typography>Home</Typography>
-              <Typography>Products</Typography>
-              <Typography>About</Typography>
-              <Typography>Contact Us</Typography>
+              <Typography>
+                <b>Home</b>
+              </Typography>
+              <Typography>
+                <b>Products</b>
+              </Typography>
+              <Typography>
+                <b>About</b>
+              </Typography>
+              <Typography>
+                <b>Contact Us</b>
+              </Typography>
             </Box>
           </Box>
         </Grid>
@@ -41,8 +49,8 @@ function Footer() {
           </Box>
           <Divider />
           <Box>
-            <Typography>Phone: +254 759 575 534</Typography>
-            <Typography>Email: rees@gmail.com</Typography>
+            <Typography>Phone: +254 7</Typography>
+            <Typography>Email: maxlight@gmail.com</Typography>
           </Box>
         </Grid>
         <Grid item lg={3} md={4} xs={12}>
@@ -59,7 +67,7 @@ function Footer() {
           </Box>
         </Grid>
       </Grid>
-      <Box sx={{ display: "flex" }}>
+      <Box sx={{ display: "flex", margin: "30px 2px 0px 4px" }}>
         <Box>
           <IconButton>
             <InstagramIcon />

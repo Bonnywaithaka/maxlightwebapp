@@ -39,7 +39,9 @@ function Navbar() {
         }}
       >
         <Box sx={{ width: "50%" }}>
-          <Typography variant="h6">MaxLight Electricals</Typography>
+          <Typography variant="h6" color="#ff4500">
+            MaxLight Electricals
+          </Typography>
         </Box>
         <Box>
           <AccountMenu />
@@ -60,17 +62,13 @@ function Navbar() {
       }}
     >
       <Box sx={{ width: "50%" }}>
-        <Image src="/assets/sitelogo.bmp" alt="logo" width={100} height={60} />
-        <Image
-          src="/assets/dahualogo.png"
-          alt="dlogo"
-          width={100}
-          height={60}
-        />
+        <Typography variant="h6" color="#ff4500">
+          MaxLight Electronics & Bathroom Accessories
+        </Typography>
       </Box>
 
       <Box
-        sx={{ display: "flex", justifyContent: "space-evenly", width: "20%" }}
+        sx={{ display: "flex", justifyContent: "space-between", width: "20%" }}
       >
         <StyledLinked href="/" underline="hover" color="#888">
           Home
@@ -80,6 +78,9 @@ function Navbar() {
         </StyledLinked>
         <StyledLinked href="/about" underline="hover" color="#888">
           About
+        </StyledLinked>
+        <StyledLinked href="/" underline="hover" color="#888">
+          Contact Us
         </StyledLinked>
       </Box>
     </Box>
