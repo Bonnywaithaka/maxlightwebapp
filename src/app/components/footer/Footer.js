@@ -9,47 +9,35 @@ function Footer() {
   return (
     <Box
       sx={{
-        backgroundColor: "#ff4500",
-        color: "#fff",
+        backgroundColor: "#fff",
         marginTop: 10,
         minHeight: 100,
         padding: 3,
-        border: "1px solid darkblue",
+        borderBottom: "1px solid #ff4500",
       }}
     >
       <Grid container spacing={2}>
         <Grid item lg={3} md={4} xs={12}>
           <Box>
-            <Typography variant="h6">Social Links</Typography>
+            <Typography variant="h6" color="#ff4500">
+              Quick Links
+            </Typography>
           </Box>
           <Divider />
           <Box>
-            <Box sx={{ display: "flex" }}>
-              <IconButton>
-                {" "}
-                <InstagramIcon />
-              </IconButton>
-              <Typography>Instagram</Typography>
-            </Box>
-            <Box sx={{ display: "flex" }}>
-              <IconButton>
-                {" "}
-                <FacebookOutlinedIcon />
-              </IconButton>
-              <Typography>Facebook</Typography>
-            </Box>
-            <Box sx={{ display: "flex" }}>
-              <IconButton>
-                {" "}
-                <TwitterIcon />
-              </IconButton>
-              <Typography>Twitter</Typography>
+            <Box sx={{ display: "flex", flexDirection: "column" }}>
+              <Typography>Home</Typography>
+              <Typography>Products</Typography>
+              <Typography>About</Typography>
+              <Typography>Contact Us</Typography>
             </Box>
           </Box>
         </Grid>
         <Grid item lg={3} md={4} xs={12}>
           <Box>
-            <Typography variant="h6">Contact Us</Typography>
+            <Typography variant="h6" color="#ff4500">
+              Contact us
+            </Typography>
           </Box>
           <Divider />
           <Box>
@@ -59,15 +47,37 @@ function Footer() {
         </Grid>
         <Grid item lg={3} md={4} xs={12}>
           <Box>
-            <Typography variant="h6">We Are Located at:</Typography>
+            <Typography variant="h6" color="#ff4500">
+              We Are Located at:
+            </Typography>
           </Box>
           <Divider />
           <Box>
-            <Typography>Nakuru: Baraka plaza Ground Floor Rm 12</Typography>
-            <Typography>Nairobi: Veteran House 1st Floor Rm 7</Typography>
+            <Typography>
+              Ruiru: Eastern Bypass Capital One Bld near Quick Mart
+            </Typography>
           </Box>
         </Grid>
       </Grid>
+      <Box sx={{ display: "flex" }}>
+        <Box>
+          <IconButton>
+            <InstagramIcon />
+          </IconButton>
+        </Box>
+        <Box sx={{ display: "flex" }}>
+          <IconButton>
+            {" "}
+            <FacebookOutlinedIcon />
+          </IconButton>
+        </Box>
+        <Box sx={{ display: "flex" }}>
+          <IconButton>
+            {" "}
+            <TwitterIcon />
+          </IconButton>
+        </Box>
+      </Box>
     </Box>
   );
 }

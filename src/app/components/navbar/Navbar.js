@@ -30,7 +30,7 @@ function Navbar() {
         sx={{
           backgroundColor: "#fff",
           color: "#888",
-          borderBottom: "2px solid #ff4500",
+          borderBottom: "1px solid #ff4500",
           height: 50,
           display: "flex",
           justifyContent: "space-between",
@@ -39,13 +39,6 @@ function Navbar() {
         }}
       >
         <Box sx={{ width: "50%" }}>
-          {/* <Image src="/assets/sitelogo.bmp" alt="logo" width={100} height={60} />
-        <Image
-          src="/assets/dahualogo.png"
-          alt="dlogo"
-          width={100}
-          height={60}
-        /> */}
           <Typography variant="h6">MaxLight Electricals</Typography>
         </Box>
         <Box>
@@ -58,9 +51,8 @@ function Navbar() {
     <Box
       sx={{
         backgroundColor: "#fff",
-        color: "#000",
-        borderBottom: "2px solid #ff4500",
-        height: 50,
+        borderBottom: "1px solid #ff4500",
+        height: 80,
         display: "flex",
         justifyContent: "flex-start",
         alignItems: "center",
@@ -88,13 +80,6 @@ function Navbar() {
         </StyledLinked>
         <StyledLinked href="/about" underline="hover" color="#888">
           About
-        </StyledLinked>
-      </Box>
-      <Box>
-        <StyledLinked href="/email">
-          <Button variant="contained" size="small" color="secondary">
-            Get Quote
-          </Button>
         </StyledLinked>
       </Box>
     </Box>
