@@ -31,7 +31,7 @@ function Navbar() {
           backgroundColor: "#fff",
           color: "#888",
           borderBottom: "1px solid #ff4500",
-          height: 50,
+          height: 70,
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
@@ -39,9 +39,15 @@ function Navbar() {
         }}
       >
         <Box sx={{ width: "50%" }}>
-          <Typography variant="h6" color="#ff4500">
+          <Image
+            src="/assets/maxlogo.jpg"
+            alt="logo"
+            width={120}
+            height={80}
+          />
+          {/* <Typography variant="h6" color="#ff4500">
             MaxLight Electricals
-          </Typography>
+          </Typography>*/}
         </Box>
         <Box>
           <AccountMenu />
@@ -62,9 +68,10 @@ function Navbar() {
       }}
     >
       <Box sx={{ width: "50%" }}>
-        <Typography variant="h6" color="#ff4500">
+        <Image src="/assets/maxlogo.jpg" alt="logo" width={150} height={100} />
+        {/* <Typography variant="h6" color="#ff4500">
           MaxLight Electronics & Bathroom Accessories
-        </Typography>
+        </Typography> */}
       </Box>
 
       <Box

@@ -11,6 +11,7 @@ import PersonAdd from "@mui/icons-material/PersonAdd";
 import Settings from "@mui/icons-material/Settings";
 import Logout from "@mui/icons-material/Logout";
 import HomeIcon from "@mui/icons-material/Home";
+import MenuOutlinedIcon from "@mui/icons-material/Menu";
 
 export default function AccountMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -23,7 +24,7 @@ export default function AccountMenu() {
   };
   return (
     <React.Fragment>
-      <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" }}>
+      <Box sx={{ display: "flex", alignItems: "center", textAlign: "center" , marginRight:3}}>
         <Tooltip title="Account settings">
           <IconButton
             onClick={handleClick}
@@ -33,7 +34,7 @@ export default function AccountMenu() {
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
           >
-            <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
+            <MenuOutlinedIcon />
           </IconButton>
         </Tooltip>
       </Box>
