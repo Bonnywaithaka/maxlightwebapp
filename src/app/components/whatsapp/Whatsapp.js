@@ -15,7 +15,7 @@ const WhatsAppFloating = () => {
     <div
       style={{
         position: "fixed",
-        bottom: "20px",
+        bottom: "40px",
         right: "20px",
         width: "50px",
         height: "50px",
